@@ -1,6 +1,11 @@
 var webpack = require("webpack");
 //生成css文件
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+const extractSass = new ExtractTextPlugin({
+    filename: "./css/[name].[contenthash].css",
+    disable: false //process.env.NODE_ENV === "development"
+});
 
 module.exports = {
     entry: "./client/main.js",
@@ -8,11 +13,20 @@ module.exports = {
       filename: "./js/bundle.js"
     },
     module: {
-        loaders: [
-            { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css!sass") }
-        ]
+      rules: [{
+          test: /\.scss$/,
+          loader: extractSass.extract({
+              loader: [{
+                  loader: "css-loader"
+              }, {
+                  loader: "sass-loader"
+              }],
+              // use style-loader in development
+              fallbackLoader: "style-loader"
+          })
+      }]
     },
     plugins: [
-        new ExtractTextPlugin("./css/[name].[hash].css")
+        extractSass
     ]
 }

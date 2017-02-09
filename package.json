@@ -4,7 +4,7 @@
   "description": "只为sass学习",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "./node_modules/.bin/webpack"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,11 @@
   },
   "homepage": "https://github.com/iq9891/learn-sass#readme",
   "devDependencies": {
-    "css-loader": "^0.25.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "sass-loader": "^4.0.2",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.5",
+    "postcss-loader": "^1.2.2",
+    "sass-loader": "^5.0.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.3"
+    "webpack": "^2.2.1"
   }
 }
