@@ -8,6 +8,6 @@
 
 ## 运行
 
-`grunt` 运行，直接编译sass
+`npm start` 运行，直接编译sass
 
 将sass文件中的sass文件编译到css文件中
