@@ -1,0 +1,23 @@
+{
+  "name": "learn-sass",
+  "version": "1.0.0",
+  "description": "只为sass学习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iq9891/learn-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iq9891/learn-sass/issues"
+  },
+  "homepage": "https://github.com/iq9891/learn-sass#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0"
+  }
+}
