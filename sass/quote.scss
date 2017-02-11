@@ -1,0 +1,16 @@
+a {
+  color: red;
+  &:hover {
+    color: blue;
+  }
+}
+
+.tab {
+  width: 100px;
+  &-header {
+    width: 40px;
+  }
+  &-footer {
+    width: 40px;
+  }
+}
