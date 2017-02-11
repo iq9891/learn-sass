@@ -1,0 +1,11 @@
+//声明变量
+$color: red;
+$node: h1;
+
+//运用变量
+#{$node} {
+  color: $color;
+}
+span {
+  background: $color;
+}

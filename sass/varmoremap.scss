@@ -1,0 +1,10 @@
+//声明 Map 类型数据
+$maps: (header: red, div: green, footer: blue);
+
+//使用
+//利用循环，来获取 Map 类型数据中的各种数据
+@each $map, $color in $maps {
+  #{$map} {
+    color: $color;
+  }
+}
