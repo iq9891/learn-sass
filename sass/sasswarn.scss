@@ -2,10 +2,12 @@
 $size: ();
 //利用 @for 和 append 方法向 $size 中添加数据
 @for $i from 0 through 2 {
+  @warn "在 for 中，这是第 #{$i} 个";
   $size: append($size, $i*10px);
 }
 // 利用 @each 设置数据
 @each $var in $size {
+  @warn "在 each 中，这是 #{$var}";
   .long-#{index($size, $var)} {
     width: $var;
   }
