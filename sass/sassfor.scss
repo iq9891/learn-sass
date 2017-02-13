@@ -1,0 +1,6 @@
+//用 @for 定义一个从 0 到 5 的循环
+@for $i from 0 through 5 {
+  .long#{$i} {
+    width: 10px * $i;
+  }
+}
