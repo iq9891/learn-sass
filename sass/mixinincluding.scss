@@ -1,6 +1,0 @@
-//引用一个 Sass 文件
-@import "mixindefining.scss";
-//用 @include 使用一个 Mixin
-.myTitle {
-  @include setFont;
-}
